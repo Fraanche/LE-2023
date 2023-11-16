@@ -52,8 +52,7 @@ public:
   }
 };
 
-void Animal::comer()
-{
+void Animal::comer(){
   cout << "El animal come." << endl;
 }
 
@@ -63,7 +62,7 @@ int main(){
   Pajaro Pajaro;
 
 cout << "Seleccione un animal: 1= Perro, 2= Gato, 3= Pajaro: ";
-char opcion;
+int opcion;
 cin >> opcion;
 
 switch (opcion){
@@ -74,7 +73,7 @@ switch (opcion){
     Perro.correr();
     Perro.morder();
     break;
-  
+
   case 2:
     cout << "Características del Gato:" << endl;
     Gato.comer();
@@ -82,7 +81,7 @@ switch (opcion){
     Gato.saltar();
     Gato.rasguño();
     break;
-  
+
   case 3:
     cout << "Características del Pájaro:" << endl;
     Pajaro.comer();
@@ -90,7 +89,7 @@ switch (opcion){
     Pajaro.volar();
     Pajaro.picotear();
     break;
-  
+
   default:
     cout << "Opción no válida." << endl;
 }
