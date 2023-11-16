@@ -2,7 +2,7 @@ import random
 
 run = True
 
-def game():
+def juego():
     numero = random.randrange(1,100)
 
     adivinar = 0
@@ -21,7 +21,7 @@ def game():
         
 
 while run:
-    game()
+    juego()
     run = int(input("Si queres volver a jugar, presione cualquier número, sino, presione 0: "))
     if run == 0:
         print("Gracias por jugar!")
